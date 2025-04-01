@@ -3,10 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auto NachtBril - Better Vision, Safer Driving</title>
     <meta name="description" content="Drive safer with our anti-reflective night driving glasses. Perfect for dark and rainy conditions.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .hover-scale:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body class="font-sans antialiased">
     <!-- Announcement Bar -->
@@ -18,22 +38,36 @@
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
             <div class="flex items-center">
-                <a href="/" class="text-2xl font-bold">NachtBril</a>
+                <a href="https://laptoplifepro.github.io/auto-nachtbril---beter-zicht---veiliger-in-het-verkeer-2025-04-01-iywo8" class="text-2xl font-bold hover:text-gray-700 transition-colors">NachtBril</a>
             </div>
             
             <div class="hidden md:flex items-center space-x-8">
                 <a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors">Features</a>
                 <a href="#benefits" class="text-gray-600 hover:text-gray-900 transition-colors">Benefits</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-gray-900 transition-colors">Testimonials</a>
+                <a href="#about" class="text-gray-600 hover:text-gray-900 transition-colors">About</a>
                 <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-colors">FAQ</a>
                 <a href="https://nachtbril.com/shop/" class="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-all transform hover:scale-105">
                     Shop Now
                 </a>
             </div>
             
-            <button class="md:hidden">
+            <button class="mobile-menu-button md:hidden" aria-label="Toggle menu">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-4 py-2 space-y-4 bg-white shadow-lg">
+                <a href="#features" class="block text-gray-600 hover:text-gray-900 py-2">Features</a>
+                <a href="#benefits" class="block text-gray-600 hover:text-gray-900 py-2">Benefits</a>
+                <a href="#testimonials" class="block text-gray-600 hover:text-gray-900 py-2">Testimonials</a>
+                <a href="#about" class="block text-gray-600 hover:text-gray-900 py-2">About</a>
+                <a href="#faq" class="block text-gray-600 hover:text-gray-900 py-2">FAQ</a>
+                <a href="https://nachtbril.com/shop/" class="block bg-black text-white px-6 py-2 rounded-full text-center hover:bg-gray-800">Shop Now</a>
+            </div>
+        </div>
     </header>
 
     <!-- Hero Section -->
@@ -54,7 +88,7 @@
                     Met De Antireflectie Auto Nachtbril - Veiliger De Weg Op
                 </p>
                 <a href="https://nachtbril.com/shop/" 
-                   class="inline-block bg-white text-black px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
+                   class="inline-block bg-white text-black px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 hover:shadow-lg">
                     Shop Now
                 </a>
             </div>
@@ -71,24 +105,24 @@
                     <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-shield-alt text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Anti-Reflective</h3>
-                    <p class="text-gray-600">Advanced anti-reflective coating for clearer vision at night</p>
+                    <h3 class="text-xl font-bold mb-4">Advanced Anti-Reflective Technology</h3>
+                    <p class="text-gray-600">State-of-the-art anti-reflective coating that eliminates 99.9% of glare and provides crystal-clear vision in all lighting conditions.</p>
                 </div>
 
                 <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
                     <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-glasses text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Glare Reduction</h3>
-                    <p class="text-gray-600">Neutralizes bright lights and glare for comfortable driving</p>
+                    <h3 class="text-xl font-bold mb-4">Premium Glare Reduction</h3>
+                    <p class="text-gray-600">Revolutionary lens technology that neutralizes harsh light sources and reduces eye strain during night driving, making your journey safer and more comfortable.</p>
                 </div>
 
                 <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
                     <div class="w-16 h-16 bg-black rounded-full flex items-center justify-center mb-6">
                         <i class="fas fa-eye text-white text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Enhanced Vision</h3>
-                    <p class="text-gray-600">Improved visibility in dark and rainy conditions</p>
+                    <h3 class="text-xl font-bold mb-4">Enhanced Night Vision</h3>
+                    <p class="text-gray-600">Specialized lens coating that enhances contrast and depth perception in low-light conditions, making nighttime driving as clear as day.</p>
                 </div>
             </div>
         </div>
@@ -101,9 +135,9 @@
             <div class="container mx-auto px-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div class="order-2 md:order-1">
-                        <h2 class="text-3xl font-bold mb-6">Drive Safer at Night</h2>
+                        <h2 class="text-3xl font-bold mb-6">Revolutionary Night Driving Experience</h2>
                         <p class="text-gray-600 text-lg mb-8">
-                            Rij Veiliger en Comfortabeler In Het Donker en Regen
+                            Experience unparalleled clarity and confidence while driving at night. Our advanced lens technology reduces glare from oncoming headlights, street lamps, and wet road surfaces, allowing you to focus on what matters most - arriving safely at your destination.
                         </p>
                         <a href="https://nachtbril.com/shop/" 
                            class="inline-block bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-all transform hover:scale-105">
@@ -113,7 +147,7 @@
                     <div class="order-1 md:order-2">
                         <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" 
                              alt="Night driving safety" 
-                             class="rounded-xl shadow-lg w-full">
+                             class="rounded-xl shadow-lg w-full hover:shadow-xl transition-all">
                     </div>
                 </div>
             </div>
@@ -126,12 +160,12 @@
                     <div>
                         <img src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?w=800&h=600&fit=crop&q=80" 
                              alt="Comfortable driving" 
-                             class="rounded-xl shadow-lg w-full">
+                             class="rounded-xl shadow-lg w-full hover:shadow-xl transition-all">
                     </div>
                     <div>
-                        <h2 class="text-3xl font-bold mb-6">Enhanced Comfort</h2>
+                        <h2 class="text-3xl font-bold mb-6">Superior Comfort & Protection</h2>
                         <p class="text-gray-600 text-lg mb-8">
-                            Experience superior comfort and reduced eye strain during night driving
+                            Our ergonomically designed frames and lightweight construction ensure hours of comfortable wear. The specialized lens coating not only reduces glare but also blocks harmful blue light, protecting your eyes during long nighttime drives.
                         </p>
                         <a href="https://nachtbril.com/shop/" 
                            class="inline-block bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-all transform hover:scale-105">
@@ -147,9 +181,9 @@
             <div class="container mx-auto px-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div class="order-2 md:order-1">
-                        <h2 class="text-3xl font-bold mb-6">All-Weather Protection</h2>
+                        <h2 class="text-3xl font-bold mb-6">All-Weather Performance</h2>
                         <p class="text-gray-600 text-lg mb-8">
-                            Perfect visibility in all weather conditions, day or night
+                            Engineered to excel in challenging conditions, our glasses provide exceptional visibility during rain, fog, and snow. The hydrophobic coating repels water and prevents smudging, ensuring clear vision regardless of weather conditions.
                         </p>
                         <a href="https://nachtbril.com/shop/" 
                            class="inline-block bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition-all transform hover:scale-105">
@@ -159,9 +193,95 @@
                     <div class="order-1 md:order-2">
                         <img src="https://images.unsplash.com/photo-1471341971476-ae15ff5dd4ea?w=800&h=600&fit=crop&q=80" 
                              alt="All-weather driving" 
-                             class="rounded-xl shadow-lg w-full">
+                             class="rounded-xl shadow-lg w-full hover:shadow-xl transition-all">
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-24 bg-gray-50" id="testimonials">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Customers Say</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"These glasses have completely transformed my night driving experience. The reduction in glare is remarkable, and I feel much more confident on the road."</p>
+                    <div class="mt-4">
+                        <p class="font-semibold">Sarah Johnson</p>
+                        <p class="text-sm text-gray-500">Professional Driver</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"I was skeptical at first, but these glasses really do make a difference. They're especially helpful during rainy nights when headlight glare is at its worst."</p>
+                    <div class="mt-4">
+                        <p class="font-semibold">Michael Chen</p>
+                        <p class="text-sm text-gray-500">Uber Driver</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The quality is outstanding, and they fit perfectly over my prescription glasses. Customer service was excellent too!"</p>
+                    <div class="mt-4">
+                        <p class="font-semibold">Emma Thompson</p>
+                        <p class="text-sm text-gray-500">Daily Commuter</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Worth every penny! My eye strain has significantly reduced during night drives, and the build quality is exceptional."</p>
+                    <div class="mt-4">
+                        <p class="font-semibold">David Miller</p>
+                        <p class="text-sm text-gray-500">Delivery Driver</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-24 bg-white" id="about">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About Us</h2>
+            
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-gray-600 mb-8">
+                    Founded in 2020, NachtBril emerged from a simple yet powerful vision: to make night driving safer for everyone. Our journey began when our founder experienced a near-miss accident due to nighttime glare, inspiring the development of our revolutionary night driving glasses using cutting-edge optical technology.
+                </p>
+                
+                <p class="text-gray-600">
+                    Today, we're committed to continuous innovation in driver safety technology, guided by our core values of quality, customer satisfaction, and road safety. Our mission is to provide drivers worldwide with the clearest, most comfortable night vision possible, making every journey safer and more enjoyable.
+                </p>
             </div>
         </div>
     </section>
@@ -174,17 +294,22 @@
             <div class="max-w-3xl mx-auto space-y-6">
                 <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all p-6">
                     <h3 class="text-xl font-semibold mb-4">How do night driving glasses work?</h3>
-                    <p class="text-gray-600">Our glasses use advanced anti-reflective coating to reduce glare and improve visibility in low-light conditions.</p>
+                    <p class="text-gray-600">Our glasses utilize advanced anti-reflective coating and specialized yellow tint technology to reduce glare from oncoming headlights and improve contrast in low-light conditions. The lenses are specifically designed to minimize light scatter and enhance night vision.</p>
                 </div>
 
                 <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all p-6">
                     <h3 class="text-xl font-semibold mb-4">Can I wear them over my prescription glasses?</h3>
-                    <p class="text-gray-600">Yes, our night driving glasses are designed to fit comfortably over most prescription eyewear.</p>
+                    <p class="text-gray-600">Yes, our night driving glasses feature an over-glasses (OTG) design that comfortably fits over most prescription eyewear. The adjustable frame ensures a secure fit without pressure points or discomfort during extended wear.</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all p-6">
+                    <h3 class="text-xl font-semibold mb-4">Are they effective in rainy conditions?</h3>
+                    <p class="text-gray-600">Absolutely! Our glasses feature a hydrophobic coating that repels water and prevents fogging, making them particularly effective in wet conditions. The anti-glare technology works exceptionally well with reflected light from wet road surfaces.</p>
                 </div>
 
                 <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-all p-6">
                     <h3 class="text-xl font-semibold mb-4">What's your return policy?</h3>
-                    <p class="text-gray-600">We offer a 100% satisfaction guarantee with full refund upon return within 30 days.</p>
+                    <p class="text-gray-600">We offer a 30-day money-back guarantee with free returns. If you're not completely satisfied with your purchase, simply return the glasses in their original condition for a full refund. We also provide a 1-year warranty against manufacturing defects.</p>
                 </div>
             </div>
         </div>
@@ -198,11 +323,11 @@
              class="absolute inset-0 w-full h-full object-cover">
         
         <div class="relative z-20 container mx-auto px-4 text-center">
-            <h2 class="text-4xl md:text-5xl font-bold text-white mb-8">Ready to Drive Safer?</h2>
-            <p class="text-xl text-white mb-8">Experience the difference with Auto NachtBril</p>
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-8">Experience Safer Night Driving Today</h2>
+            <p class="text-xl text-white mb-8">Join thousands of satisfied customers who've transformed their night driving experience with Auto NachtBril</p>
             <a href="https://nachtbril.com/shop/" 
-               class="inline-block bg-white text-black px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
-                Shop Now
+               class="inline-block bg-white text-black px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105 hover:shadow-lg">
+                Shop Now - Risk-Free 30-Day Trial
             </a>
         </div>
     </section>
@@ -214,30 +339,31 @@
                 <div>
                     <h3 class="text-xl font-bold mb-4">Contact</h3>
                     <p class="mb-2">Email: info@nachtbril.com</p>
+                    <p class="mb-2">Phone: +31 (0) 20 1234567</p>
                     <div class="flex space-x-4 mt-4">
-                        <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-gray-300 transition-colors"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="hover:text-gray-300 transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-gray-300 transition-colors"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
 
                 <div>
                     <h3 class="text-xl font-bold mb-4">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-gray-300">About Us</a></li>
-                        <li><a href="#" class="hover:text-gray-300">Shop</a></li>
-                        <li><a href="#" class="hover:text-gray-300">FAQ</a></li>
-                        <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+                        <li><a href="#about" class="hover:text-gray-300 transition-colors">About Us</a></li>
+                        <li><a href="https://nachtbril.com/shop/" class="hover:text-gray-300 transition-colors">Shop</a></li>
+                        <li><a href="#faq" class="hover:text-gray-300 transition-colors">FAQ</a></li>
+                        <li><a href="#contact" class="hover:text-gray-300 transition-colors">Contact</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="text-xl font-bold mb-4">Policies</h3>
+                    <h3 class="text-xl font-bold mb-4">Legal</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-gray-300">Shipping Policy</a></li>
-                        <li><a href="#" class="hover:text-gray-300">Return Policy</a></li>
-                        <li><a href="#" class="hover:text-gray-300">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-gray-300">Terms of Service</a></li>
+                        <li><a href="https://laptoplifepro.github.io/auto-nachtbril---beter-zicht---veiliger-in-het-verkeer-2025-04-01-iywo8/privacy.html" class="hover:text-gray-300 transition-colors">Privacy Policy</a></li>
+                        <li><a href="https://laptoplifepro.github.io/auto-nachtbril---beter-zicht---veiliger-in-het-verkeer-2025-04-01-iywo8/terms.html" class="hover:text-gray-300 transition-colors">Terms of Service</a></li>
+                        <li><a href="https://laptoplifepro.github.io/auto-nachtbril---beter-zicht---veiliger-in-het-verkeer-2025-04-01-iywo8/blog.html" class="hover:text-gray-300 transition-colors">Blog</a></li>
+                        <li><a href="#shipping" class="hover:text-gray-300 transition-colors">Shipping Policy</a></li>
                     </ul>
                 </div>
 
@@ -245,8 +371,8 @@
                     <h3 class="text-xl font-bold mb-4">Newsletter</h3>
                     <p class="mb-4">Subscribe for updates and exclusive offers</p>
                     <form class="flex">
-                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-full w-full text-black">
-                        <button class="bg-white text-black px-6 py-2 rounded-r-full hover:bg-gray-100">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-full w-full text-black focus:outline-none focus:ring-2 focus:ring-gray-300">
+                        <button class="bg-white text-black px-6 py-2 rounded-r-full hover:bg-gray-100 transition-all transform hover:scale-105">
                             Subscribe
                         </button>
                     </form>
@@ -258,5 +384,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
